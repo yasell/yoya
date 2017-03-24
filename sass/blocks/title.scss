@@ -1,0 +1,15 @@
+.title {
+	width: 100%;
+	min-height: 9rem;
+	font-weight: bold;
+	font-size: 3rem;
+	text-align: center;
+	line-height: 9rem;
+	color: #fff;
+	background-image: linear-gradient(120deg, #95bdfd 0%, #bbd8fb 100%);
+
+	&--transfer {
+		padding-top: 5px;
+		line-height: normal;
+	}
+}

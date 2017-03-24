@@ -1,0 +1,43 @@
+/* banner block */
+.banner {
+	width: 100%;
+	background-image: linear-gradient(45deg, #e4efe9 0%, #93a5cf 100%);
+}
+
+.banner__inner {
+	display: flex;
+}
+
+.banner__img {
+	width: 30%;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.banner__descr {
+	width: 70%;
+	padding: 5rem 0 0 0;
+
+	span {
+		display: block;
+		font-weight: normal;
+		font-size: 7rem;
+		color: $red;
+	}
+}
+
+.banner__title {
+	font-weight: normal;
+	font-size: 46px;
+  color: $gray_light;
+}
+
+.banner__button {
+	margin-top: 4rem;
+
+	.button:first-child {
+		margin-right: 6rem;
+	}
+}

@@ -1,0 +1,40 @@
+/* reviews block */
+.reviews {}
+
+.reviews__head {
+	padding: 0 2rem;
+	min-height: 7rem;
+	line-height: 7rem;
+	font-weight: bold;
+	font-size: 3rem;
+	color: #fff;
+	background-image: linear-gradient(120deg, #94b11f 0%, #c4db00 100%);
+}
+
+.reviews__wrapper {
+	padding: 2rem;
+}
+
+.reviews__name {
+	font-weight: bold;
+}
+
+.reviews__city {
+	margin-bottom: 2rem;
+}
+
+.reviews__stars {
+	height: 4rem;
+	background: url("../img/stars.jpg") -8px -8px no-repeat;
+	background-size: contain;
+}
+
+.reviews__footer {
+	padding-bottom: 2rem;
+	text-align: center;
+
+	.sub-title {
+		margin-top: -2rem;
+		margin-bottom: 2rem;
+	}
+}

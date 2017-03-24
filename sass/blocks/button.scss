@@ -1,0 +1,26 @@
+.button {
+	position: relative;
+	display: inline-block;
+	max-width: 30rem;
+	padding: 1rem 4rem;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	font: bold 1.8rem $font_1;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	background-image: linear-gradient(to top, #94b11f 0%, #c4db00 100%);
+	cursor: pointer;
+	user-select: none;
+	touch-action: manipulation;
+	white-space: normal;
+	word-wrap: normal;
+	-webkit-appearance: none;
+	transition: all 0.5s;
+
+	&:hover,
+	&:active {
+		background-image: linear-gradient(to top, #c4db00 0%, #94b11f 100%);
+	}
+}

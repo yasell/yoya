@@ -1,0 +1,20 @@
+/* care block */
+.care {
+	text-align: center;
+
+	.container {
+		padding: 5rem 1rem;
+	}
+	.sub-title span {
+		display: inline-block;
+		width: 11rem;
+		min-height: 5rem;
+		font-size: 0;
+		vertical-align: bottom;
+		background: url("../img/logo-black.jpg") center no-repeat;
+		background-size: contain;
+	}
+	p {
+		padding: 3rem 24rem;
+	}
+}

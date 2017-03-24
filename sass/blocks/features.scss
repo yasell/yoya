@@ -1,0 +1,43 @@
+/* features block */
+.features {
+	.container {
+		padding: 5rem 1rem;
+	}
+	.features__list {
+		padding: 6rem 1rem;
+	}
+}
+
+.features__item {
+	display: flex;
+
+	&:not(:last-child) {
+		margin-bottom: 6rem;
+	}
+}
+
+.features__img {
+	width: 35%;
+	margin-right: 3%;
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.features__content {
+	width: 62%;
+
+	p {
+		padding: 1rem 0;
+	}
+}
+
+.features__img-center {
+	width: 100%;
+	text-align: center;
+
+	img {
+		max-width: 100%;
+	}
+}

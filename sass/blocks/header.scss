@@ -1,0 +1,43 @@
+.header {
+	width: 100%;
+	min-height: 10rem;
+	background-color: #000;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: inherit;
+}
+
+.header__logo {
+	max-width: 40rem;
+
+	img {
+		width: 100%;
+	}
+
+	span {
+		display: block;
+		text-transform: uppercase;
+		font-size: 2rem;
+		color: #fff;
+	}
+}
+
+.header__contact {
+	width: 24rem;
+	min-height: inherit;
+	padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.header__link {
+	display: block;
+	font-weight: bold;
+	font-size: 2.6rem;
+	color: #fff;
+}
