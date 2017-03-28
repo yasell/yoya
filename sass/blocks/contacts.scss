@@ -1,0 +1,25 @@
+.contacts {
+	border-bottom: 5px solid $gray_lightest;
+
+	.container {
+		display: flex;
+		padding: 3rem 1rem;
+	}
+}
+
+.contacts__content {
+	width: 30%;
+	padding: 0 2rem 0 0;
+
+	p {
+		margin-bottom: 2rem;
+	}
+	span {
+		font-weight: bold;
+	}
+}
+
+.contacts__map {
+	width: 70%;
+	min-height: 29rem;
+}

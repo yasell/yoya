@@ -1,0 +1,68 @@
+.footer {
+	.container {
+		display: flex;
+		justify-content: center;
+		padding: 3rem 1rem;
+	}
+}
+
+.footer__item {
+	width: 46rem;
+
+	&:first-child {
+		margin-right: 13rem;
+	}
+	p {
+		margin-bottom: 1rem;
+	}
+}
+
+.footer__link {
+	display: block;
+	margin-bottom: 1rem;
+	color: $gray;
+
+	&--phone {
+		font-weight: bold;
+		font-size: 2.5rem;
+	}
+	// viber/whatsapp
+	&--vendors {
+		position: relative;
+		padding-left: 8rem;
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: -5px;
+			width: 3rem;
+			height: 3rem;
+			background: center no-repeat;
+			background-size: contain;
+		}
+		&:before {
+			left: 0;
+			background-image: url("../img/icons/viber.svg");
+		}
+		&:after {
+			left: 4rem;
+			background-image: url("../img/icons/whatsapp.svg");
+		}
+	}
+	// instagramm
+	&--insta {
+		position: relative;
+		padding-left: 4rem;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: -5px;
+			left: 0;
+			width: 3rem;
+			height: 3rem;
+			background-color: $gray_lightest;
+		}
+	}
+}

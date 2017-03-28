@@ -1,0 +1,171 @@
+// inputs and selects base ( @extend )
+%form_field {
+	display: block;
+	width: 100%;
+	height: 4.5rem;
+	padding: 1rem;
+	padding-left: 3.5rem;
+	font: normal 1.6rem/1.33 $font_1;
+	color: $color_field;
+	background-color: #fff;
+	border: 1px solid $color_field_border;
+	border-radius: 5px;
+	opacity: 1;
+	transition: all 0.3s ease;
+}
+
+// common form style
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+
+	@extend %form_field;
+
+	&:hover,
+	&:active,
+	&:focus {
+    outline: none;
+		border-color: $color_field_hover;
+	}
+	&:required:valid {
+		outline: none;
+		border-color: green;
+	}
+
+	&::-webkit-input-placeholder { color: $color_field; opacity: 1; transition: all 0.3s ease; }
+  &::-moz-placeholder 				 { color: $color_field; opacity: 1; transition: all 0.3s ease; }
+  &:-ms-input-placeholder 		 { color: $color_field; opacity: 1; transition: all 0.3s ease; }
+
+	&:focus::-webkit-input-placeholder {opacity: 0; transition: all 0.3s ease; border-color: $color_field_hover;}
+  &:focus::-moz-placeholder          {opacity: 0; transition: all 0.3s ease; border-color: $color_field_hover;}
+  &:focus:-moz-placeholder           {opacity: 0; transition: all 0.3s ease; border-color: $color_field_hover;}
+  &:focus:-ms-input-placeholder      {opacity: 0; transition: all 0.3s ease; border-color: $color_field_hover;}
+}
+
+.errortext {
+	padding: 1rem;
+	color: red;
+	transition: all 0.3s ease;
+}
+// end inputs and selects base
+
+.form {
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+
+	&--modal {
+		padding-top: 4rem;
+		flex-direction: column;
+
+		.form__unit {
+			max-width: 100%;
+			margin-bottom: 1rem;
+		}
+		.form__submit {
+			margin: 0 auto;
+			max-width: 75%;
+		}
+	}
+
+	@media (max-width: $mobile_full) {
+		flex-wrap: wrap;
+	}
+}
+
+// main inputs from contacts form
+.form__unit {
+	position: relative;
+	flex-grow: 1;
+	max-width: 30%;
+	background: #fff;
+
+	> label {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		opacity: 0.5;
+	}
+
+	> input[type="text"],
+	> input[type="email"],
+	> input[type="tel"],
+	> textarea {
+
+			&:focus {
+				outline: 0;
+      	background: rgba(237, 237, 237, 0.4);
+
+				& + label {
+        	opacity: 0;
+      	}
+			}
+
+			&:valid {
+        background: url("../img/icons/check-ok.svg");
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 6px 10px;
+        	& + label {
+          	opacity: 0;
+        }
+      }
+
+			&:invalid:not(:focus):not(:placeholder-shown) {
+        background: pink;
+        & + label {
+          opacity: 0;
+        }
+      }
+
+			&:invalid:focus:not(:placeholder-shown) {
+        & ~ .form__error {
+          max-height: 20rem;
+          padding: 1rem 2rem;
+        }
+      }
+		}
+	@media (max-width: $mobile_full) {
+		width: 100%;
+		max-width: none;
+		margin-bottom: 2rem;
+	}
+}
+
+// submit
+.form__submit {
+  display: block;
+	flex-grow: 1;
+  max-width: 25%;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+	outline: none;
+	-webkit-appearance: none;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+
+	// &:hover,
+	// &:active,
+	// &:focus {
+	// 	color: $red;
+	// 	background-color: #fff;
+	// 	outline: none;
+	// }
+
+	@media (max-width: $mobile_full) {
+		max-width: 75%;
+		margin: 0 auto;
+	}
+}
+
+// error text
+.form__error {
+	padding: 0rem 2rem;
+  max-height: 0;
+  overflow: hidden;
+  color: red;
+  font: 200 1.4rem $font_1;
+	transition: 0.3s;
+}

@@ -9,9 +9,11 @@ html {
 	min-height: 100%;
 	font-size: 7px;
 	@media (min-width: $tablet) {
-		font-size: 9px; }
+		font-size: 9px;
+	}
 	@media (min-width: $desktop) {
-		font-size: 10px; }
+		font-size: 10px;
+	}
 }
 
 body {
@@ -41,16 +43,17 @@ dt {
 
 a {
 	text-decoration: none;
-	color: $color_link;
+	color: $gray;
 	transition: all 0.3s;
 
-	&:active,
-	&:focus,
-	&:hover {}
+	&:hover {
+		color: $color_link;
+	}
 }
 
 .wrapper {
 	position: relative;
+	min-width: 1200px;
 	min-height: 100%;
 	height: auto !important;
 	overflow: hidden;
@@ -62,22 +65,26 @@ a {
 
 // back to top
 .back-top {
-	position: fixed;
-	bottom: 3rem;
-	right: 3rem;
 	z-index: 1000;
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	transition: all 0.3s ease;
 
 	a {
 		display: block;
-		width: 5rem;
-		height: 5rem;
-		background: url("../img/icons/top.svg") center no-repeat;
+		width: 4rem;
+		height: 4rem;
+		font-size: 0;
+		background: url("../img/icons/to-top.svg") center no-repeat;
 		background-size: contain;
-		text-align: center;
-		text-decoration: none;
+	}
 
-		&:hover {
-			background-image: url("../img/icons/top_hover.svg");
-		}
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.1);
 	}
 }

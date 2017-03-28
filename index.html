@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1200, user-scalable=yes">
 	<meta name="robots" content="index,follow">
 	<meta name="msapplication-tap-highlight" content="no">
 	<meta name="format-detection" content="telephone=no">
@@ -34,8 +34,8 @@
 					<span>Интернет магазин детских колясок</span>
 				</a>
 				<div class="header__contact">
-					<a class="header__link" href="tel:">2143532542356</a>
-					<button id="call" class="button" type="button" name="Заказать звонок">Заказать звонок</button>
+					<a class="header__link" href="tel:+375295772222">+375(29) 577 22 22</a>
+					<button id="call" class="button  button--grow" type="button" name="Заказать звонок">Заказать звонок</button>
 				</div>
 			</div>
 		</header>
@@ -47,17 +47,17 @@
 						<img src="img/banner.png" alt="коляска">
 					</div>
 					<div class="banner__descr">
-						<h1 class="banner__title"> Компактные коляски с доставкой <br> до двери на следующий день <br> всего за 11 190 </h1>
-						<span>9 990 руб. </span>
+						<h1 class="banner__title"> Компактные коляски с доставкой <br> до двери на следующий день <br> всего за <span> 499 руб </span> </h1>
+						<span> 399 руб </span>
 						<div class="banner__button">
-							<button id="down" class="button" type="button" name="Подробнее">Подробнее</button>
-							<button id="catalog" class="button" type="button" name="Перейти в каталог">Перейти в каталог</button>
+							<a class="button" href="#down"> Подробнее </a>
+							<a class="button" href="#catalog"> Перейти в каталог </a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="features">
+			<div id="down" class="features">
 				<h2 class="title"> Это то что вы давно искали </h2>
 				<ul class="features__list  container">
 					<li class="features__item">
@@ -181,6 +181,33 @@
 				</div>
 			</div>
 
+			<div class="features">
+				<h2 class="title"> Кофморт и легкость </h2>
+				<ul class="features__list  container">
+					<li class="features__item">
+						<div class="features__img">
+							<img src="img/naklon.jpg" style="max-width:80%;" alt="Угол наклона">
+						</div>
+						<div class="features__content">
+							<h3 class="sub-title"> Угол наклона спинки может регулироваться </h3>
+							<p> 95 - 165 (YOYA 175 +) градусов. Именно такое положение является наиболее комфортным для передвижения ребенка в коляске </p>
+						</div>
+					</li>
+					<li class="features__item">
+						<div class="features__img">
+							<img src="img/sun.jpg" alt="Несколько положений">
+						</div>
+						<div class="features__content">
+							<h3 class="sub-title"> Несколько положений козырька </h3>
+							<p> У козырька имеется несколько вариантов положения, что защитит Вашего ребенка от вредного воздействия ультрафиолета </p>
+						</div>
+					</li>
+				</ul>
+				<div class="sizes__footer  container" style="margin-bottom:0;padding-top:0;">
+					<img src="img/sun0.jpg" alt="Управление - легко!">
+				</div>
+			</div>
+
 			<div class="equipment">
 				<h2 class="title  title--transfer"> Полная комплектация <br> (аксессуары в подарок) </h2>
 				<ul class="equipment__list  container">
@@ -259,133 +286,307 @@
 				</ul>
 			</div>
 
-			<div class="catalog">
-				<h2 class="title  title--transfer"> Каталог колясок YOYA<br>Все модели Вы можете заказать на белой или черной раме </h2>
+			<div class="call  container">
+				<h2 class="sub-title  sub-title--center"> Заказать звонок </h2>
+				<form id="call_form" class="form" method="post" action="#">
+					<div class="form__unit">
+						<input type="text" id="call_name" name="first_name" required placeholder=" " />
+						<label for="call_name">Ваше имя*</label>
+					</div>
+					<div class="form__unit">
+						<input type="tel" id="call_phone" name="phone" required placeholder=" " pattern="^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" />
+						<label for="call_phone">Телефон*</label>
+						<div class="form__error">
+							Введите пожалуйста реальный телефон.
+						</div>
+					</div>
+					<input class="form__submit  button" type="submit" value="Заказать звонок" />
+				</form>
+			</div>
+
+			<div id="catalog" class="catalog">
+				<h2 class="title  title--transfer"> Каталог колясок YOYA<br>Все модели Вы можете заказать на белой или раме </h2>
 				<nav class="catalog__nav">
 					<ul class="catalog__nav-list  container">
 						<li class="catalog__nav-item">
-							<a href="#/">YOYA babe</a>
+							<a href="#babe"> YOYA babe </a>
 						</li>
 						<li class="catalog__nav-item">
-							<a href="#/">YOYA plus</a>
+							<a href="#plus"> YOYA plus </a>
 						</li>
 						<li class="catalog__nav-item">
-							<a href="#/">Аксессуары</a>
+							<a href="#accessories"> Аксессуары </a>
 						</li>
 					</ul>
 				</nav>
 				<div class="container">
-					<div class="catalog__unit">
-						<h3 class="sub-title"> Yoya babe </h3>
-						<p> коляски с откидной спинкой до 165 градусов, предназначены для детей от 6 месяцев срок службы 3 года / гарантия 1 год </p>
+					<div id="babe" class="catalog__unit">
+						<h3 class="sub-title"> YOYA babe </h3>
+						<p> Коляски с откидной спинкой до <span>165</span> градусов, предназначены для детей от <span>6 месяцев</span> <br> срок службы <span>3 года</span> / гарантия <span>1 год</span></p>
 						<div class="swiper-container  swiper-babe">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe.jpg" alt="babe">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/minnie.jpg" alt="babe">
+									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<p class="swiper-price"> 399 руб. </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (1).png" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/mickey.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Mickey</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (2).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/pink.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Pink</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (3).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/yellow.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Yellow</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (4).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/violet.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Violet</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (5).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/red.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Red</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (6).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/black.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Black</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (7).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/blue.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Blue</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (8).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/grey.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Grey</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (9).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/cat.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Cat</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (10).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/pinup.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Pinup</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (11).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/bee.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Bee</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (12).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/blue-long.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Blue Long</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (13).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/peas-long.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Peas Long</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (14).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/dalmatian.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Dalmatian</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (15).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/violet-long.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Violet Long</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (16).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/black-long.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Black Long</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 								<div class="swiper-slide">
-									<img src="img/yoya-babe/babe (17).jpg" alt="babe">
-									<p class="swiper-name"> Коляска <span>YOYA Minnie</span> </p>
-									<p class="swiper-price"> 9 990руб </p>
+									<div class="swiper-image">
+										<img src="img/yoya-babe/bear.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Bear</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/flowers.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Flowers</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/camouflage.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Camouflage</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/usa.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA USA</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/khaki.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Khaki</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/rainbow.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Rainbow</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/stars.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Stars</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/bubble.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Bubble</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/butterfly.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Butterfly</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/chess.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Chess</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/lime.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Lime</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/kitty.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Kitty</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/comics.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Comics</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/lime-long.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Lime Long</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/red-long.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Red Long</span> </p>
+									<p class="swiper-price"> 399 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-babe/yellow-long.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Yellow Long</span> </p>
+									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
 								</div>
 							</div>
@@ -394,28 +595,247 @@
 							<div class="swiper-button-next"></div>
 						</div>
 					</div>
-					<div class="catalog__unit">
-						<h3 class="sub-title"> Yoya plus </h3>
-						<p> коляски с откидной спинкой до 165 градусов, предназначены для детей от 6 месяцев срок службы 3 года / гарантия 1 год </p>
+					<div id="plus" class="catalog__unit">
+						<h3 class="sub-title"> YOYA plus </h3>
+						<p> Коляски с откидной спинкой до <span>175</span> градусов, предназначены для детей от <span>0 месяцев</span> <br> срок службы <span>3 года</span> / гарантия <span>1 год</span> </p>
 						<div class="swiper-container  swiper-plus">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide">Slide 1</div>
-								<div class="swiper-slide">Slide 2</div>
-								<div class="swiper-slide">Slide 3</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-minnie.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Minnie</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-mickey.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Mickey</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-light-pink.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Light Pink</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-khaki.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Khaki</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-green.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Green</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-blue.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Blue</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-red.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Red</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-violet.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Violet</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-pink.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Pink</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-light-blue.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Light Blue</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-military.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Military</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/yoya-plus/plus-yellow.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Коляска <span>YOYA Plus Yellow</span> </p>
+									<p class="swiper-price"> 449 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
 							</div>
 							<div class="swiper-pagination"></div>
 							<div class="swiper-button-prev"></div>
 							<div class="swiper-button-next"></div>
 						</div>
 					</div>
-					<div class="catalog__unit">
-						<h3 class="sub-title"> Аксессуары </h3>
-						<p> коляски с откидной спинкой до 165 градусов, предназначены для детей от 6 месяцев срок службы 3 года / гарантия 1 год </p>
+					<div id="accessories" class="catalog__unit">
+						<h3 class="sub-title"> Аксессуары YOYA </h3>
+						<p> Люльки для новорожденных <span>YOYA Newborn Box 0+.</span> Автокресла <span>YOYA Seat 0+.</span> Зонты <span>YOYA Umbrella.</span> Накидка на ножки <span>YOYA Cape.</span>
+						</p>
 						<div class="swiper-container  swiper-other">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide">Slide 1</div>
-								<div class="swiper-slide">Slide 2</div>
-								<div class="swiper-slide">Slide 3</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/box-grey.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Люлька <span>YOYA Newborn Box Grey</span> </p>
+									<p class="swiper-price"> 149 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/box-violet.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Люлька <span>YOYA Newborn Box Violet</span> </p>
+									<p class="swiper-price"> 149 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/box-pink.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Люлька <span>YOYA Newborn Box Pink</span> </p>
+									<p class="swiper-price"> 149 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/box-black.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Люлька <span>YOYA Newborn Box Black</span> </p>
+									<p class="swiper-price"> 149 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/box-blue.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Люлька <span>YOYA Newborn Box Blue</span> </p>
+									<p class="swiper-price"> 149 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/seat-violet.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Автокресло <span>YOYA Seat Violet</span> </p>
+									<p class="swiper-price"> 209 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/seat-pink.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Автокресло <span>YOYA Seat Pink</span> </p>
+									<p class="swiper-price"> 209 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/seat-black.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Автокресло <span>YOYA Seat Black</span> </p>
+									<p class="swiper-price"> 209 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/seat-blue.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Автокресло <span>YOYA Seat Blue</span> </p>
+									<p class="swiper-price"> 209 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/umbrella-green.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Зонт <span>YOYA Umbrella Green</span> </p>
+									<p class="swiper-price"> 34,90 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/umbrella-pink.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Зонт <span>YOYA Umbrella Pink</span> </p>
+									<p class="swiper-price"> 34,90 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/umbrella-black.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Зонт <span>YOYA Umbrella Black</span> </p>
+									<p class="swiper-price"> 34,90 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/umbrella-blue.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Зонт <span>YOYA Umbrella Blue</span> </p>
+									<p class="swiper-price"> 34,90 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/cape-pink.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Накидка <span>YOYA Cape Pink</span> </p>
+									<p class="swiper-price"> 39,90 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/cape-black.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Накидка <span>YOYA Cape Black</span> </p>
+									<p class="swiper-price"> 39,90 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper-image">
+										<img src="img/accessuare/cape-violet.jpg" alt="babe">
+									</div>
+									<p class="swiper-name"> Накидка <span>YOYA Cape Violet</span> </p>
+									<p class="swiper-price"> 39,90 руб </p>
+									<button class="button  button--buy" type="button" name="Заказать">Заказать</button>
+								</div>
 							</div>
 							<div class="swiper-pagination"></div>
 							<div class="swiper-button-prev"></div>
@@ -425,7 +845,7 @@
 				</div>
 			</div>
 
-			<div class="reviews">
+			<!-- <div class="reviews">
 				<h2 class="title"> Отзывы </h2>
 				<div class="container">
 					<div class="swiper-container  swiper-reviews">
@@ -441,23 +861,30 @@
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="reviews__head"> "Путешествия в кайф" </div>
+								<div class="reviews__head"> "Коляска идеальная" </div>
 								<div class="reviews__wrapper">
-									<p class="reviews__name"> Елена Токарь </p>
-									<p class="reviews__city"> г.Москва </p>
+									<p class="reviews__name"> Эвелина Варапаева </p>
+									<p class="reviews__city"> г.Минск </p>
 									<div class="reviews__stars"></div>
-									<p class="reviews__content"> Мы очень часто летаем на самолёте, поэтому yoya для нас стала настоящей находкой! До этого была коляска-трость, но её все равно приходилось сдавать в багаж. А в последний перелёт коляску нам вообще сломали. Эту я кладу в специальную сумку, которую
-										подарили в подарок и беру коляску с собой в салон самолёта. Теперь путешествия для нас только в кайф! Скоро у нас родится второй малыш, и мы ещё купим люльку. Yoya - это моя самая лучшая находка! </p>
+									<p class="reviews__content"> Сегодня мы весь день на yoya. У нас был полноценный тест-драйв. И где мы только не были: поликлиника, тц, парк... Мои ноги гудят, а вот доча чувствует себя прекрасно. Всю дорогу сидела спокойная, а в конце прогулки даже задремала. Коляска идеальная! Не гремит и не издаёт посторонних звуков! Маневренность меня удивила! Она такая лёгкая, что одним мизинцем можно рулить! Мать довольна! Доча довольна! Спасибо Вам!) </p>
 								</div>
 							</div>
 							<div class="swiper-slide">
-								<div class="reviews__head"> "Путешествия в кайф" </div>
+								<div class="reviews__head"> "Сделали скидку" </div>
 								<div class="reviews__wrapper">
-									<p class="reviews__name"> Елена Токарь </p>
-									<p class="reviews__city"> г.Москва </p>
+									<p class="reviews__name"> Светлана Дамбова </p>
+									<p class="reviews__city"> г.Минск </p>
 									<div class="reviews__stars"></div>
-									<p class="reviews__content"> Мы очень часто летаем на самолёте, поэтому yoya для нас стала настоящей находкой! До этого была коляска-трость, но её все равно приходилось сдавать в багаж. А в последний перелёт коляску нам вообще сломали. Эту я кладу в специальную сумку, которую
-										подарили в подарок и беру коляску с собой в салон самолёта. Теперь путешествия для нас только в кайф! Скоро у нас родится второй малыш, и мы ещё купим люльку. Yoya - это моя самая лучшая находка! </p>
+									<p class="reviews__content"> На покупку yoya меня надоумила сестра, у нас детишки ровесники. Мы заказали Микки и Минни. Колясочки пришли с кучей всяких полезных штучек: чехол в сеточку от насекомых, дождевик, подстаканник, сумка-переноска это просто находка! В июне едем в отпуск - я обязательно возьму йойа с собой! Чуть не забыла: за покупку двух колясок - нам сделали скидку) </p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="reviews__head"> "Просто сказка" </div>
+								<div class="reviews__wrapper">
+									<p class="reviews__name"> Виктория Брюханова </p>
+									<p class="reviews__city"> г.Минск </p>
+									<div class="reviews__stars"></div>
+									<p class="reviews__content"> Давно облизывалась на Babyzen yoyo, но уж больно цена кусалась... Буквально пару месяцев назад узнала о yoya! Прекрасный ПОЛНЫЙ аналог, все функции полностью соответствуют! А как легко она складывается/раскладывается - это просто сказка! Такая компактная и лёгкая - легко вмещается в багажник моей малолитражки! Ну и муж покупку одобрил, ведь экономия в три раза! Мой вердикт твёрдая пятёрка! </p>
 								</div>
 							</div>
 						</div>
@@ -465,22 +892,28 @@
 						<div class="swiper-button-prev"></div>
 						<div class="swiper-button-next"></div>
 					</div>
-					<div class="reviews__footer">
-						<h3 class="sub-title"> Больше отзывов и расцветок на наших страницах в соц сетях </h3>
-						<a class="button" href="#/"> @yoya_baby_rus </a>
-					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="contacts">
 				<h2 class="title"> Контакты </h2>
 				<div class="container">
 					<div class="contacts__content">
-						<p> 121108, г. Москва <br> ул. Кутузовский проспект, 48 </p>
-						<p> Часы работы: 09.00 - 21.00 (перед посещением необходимо позвонить по номеру +7 499 991 20 95) </p>
+						<p>
+							<span> Пункт самовывоза: </span>
+							<br> г. Минск, ТЦ "Замок"
+							<br> Партизанский проспект, 65
+						</p>
+						<p>
+							<span> Время работы: </span>
+							<br> 09:00 - 20:00 (будни)
+							<br> 09:00 - 18:00 (выходные)
+						</p>
 					</div>
 					<div class="contacts__map">
-						<div id="map" class="map"></div>
+						<div id="map" class="map">
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A48c44ccaf23219c5a25636bba1bba66aa7a379695e278e71e2c4f05f0a252388&amp;width=100%25&amp;height=290&amp;lang=ru_RU&amp;scroll=false"></script>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -489,23 +922,73 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__item">
-					<img src="img/logo.png" alt="logo">
-					<p> Интернет-магазин колясок YOYA с доставкой по Российской Федерации. По всем вопросам обращайтесь по телефону: +7 (499) 991-20-95 ИНН 280109890911 </p>
+					<img src="img/logo-black.png" alt="logo">
+					<p>
+						Интернет-магазин колясок YOYA
+						<br> По всем вопросам обращайтесь по телефону:
+						<br> <a href="tel:+375293772222">+375(29) 377 22 22</a>
+						<br> ИП Борейко Евгения Анатольевна <a style="color:#d60b52;" href="img/chek.jpg" target="_blank">пример чека</a>
+						<br> УНП 192444111
+						<br> Зарегистрирован Мингорисполкомом 17.03.2015 г.
+						<br> Юридический адрес: 220039 г.Минск, ул.Авакяна, 30/1
+						<br> Почтовый адрес: 220004 г.Минск, до востребования
+					</p>
 				</div>
 				<div class="footer__item">
-					<a class="footer__link  footer__link--bold" href="tel:">3542353253</a>
+					<a class="footer__link  footer__link--phone" href="tel:+375293772222">+375(29) 377 22 22</a>
+					<a class="footer__link  footer__link--phone" href="tel:+375295772222">+375(29) 577 22 22</a>
 					<p> Единая служба поддержки клиентов </p>
-					<a class="footer__link" href="mailto:info@yoya-babe.ru">info@yoya-babe.ru</a>
-					<a class="footer__link  footer__link--vendors" href="tel:">35356364563546</a>
-					<a class="footer__link  footer__link--insta" href="">@yoya_babe_rus</a>
+					<a class="footer__link" href="mailto:info@yoya-baby.by">E-mail: info@yoya-baby.by</a>
+					<a class="footer__link  footer__link--vendors" href="tel:+375295772222">+375(29) 577 22 22</a>
+					<!-- <a class="footer__link  footer__link--insta" href="">@yoya_babe_bel</a> -->
 				</div>
 			</div>
 		</footer>
 
 	</div>
 
+	<div id="back-top" class="back-top">
+		<a href="#top">back top</a>
+	</div>
+
+	<div class="modal_bg"></div>
+
+	<div id="modal_call" class="modal">
+		<div class="modal__wrapper">
+			<button class="modal__close"> Close </button>
+			<h2 class="title  title--transfer"> Заполните форму и наши менеджеры свяжутся с Вами для оформления заказа </h2>
+			<div class="modal__guts">
+				<form id="modal_form" class="form  form--modal" method="post" action="#">
+					<div class="form__unit">
+						<input type="text" id="name" name="name" value="" required placeholder=" " />
+						<label for="name">Ваше имя*</label>
+					</div>
+					<div class="form__unit">
+						<input type="tel" id="phone" name="phone" value="" required placeholder=" " pattern="^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" />
+						<label for="phone">Телефон*</label>
+						<div class="form__error">
+							Введите пожалуйста реальный телефон.
+						</div>
+					</div>
+					<input class="form__submit  button" type="submit" value="Отправить" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal_ok" class="modal">
+		<div class="modal__wrapper">
+			<button class="modal__close"> Close </button>
+			<h2 class="title"> Спасибо! </h2>
+			<div class="modal__guts">
+				<p> Ваша заявка принята. Наш менеджер свяжется с Вами в самое ближайшее время. </p>
+			</div>
+		</div>
+	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

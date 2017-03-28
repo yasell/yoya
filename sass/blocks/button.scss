@@ -18,9 +18,55 @@
 	word-wrap: normal;
 	-webkit-appearance: none;
 	transition: all 0.5s;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
 
-	&:hover,
-	&:active {
+	// effect with shadow
+	&:before {
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+		content: '';
+		top: 100%;
+		left: 5%;
+		height: 10px;
+		width: 90%;
+		opacity: 0;
+		background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+		background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+		transition-duration: 0.3s;
+		transition-property: transform, opacity;
+	}
+
+	&:active,
+	&:hover {
+		transform: translateY(-5px);
 		background-image: linear-gradient(to top, #c4db00 0%, #94b11f 100%);
+
+		&:before {
+			opacity: 1;
+			transform: translateY(5px);
+		}
+	}
+
+	// grow effect
+	&--grow {
+
+		&:before {
+			display: none;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			transform: scale(1.1);
+		}
+	}
+}
+
+a.button {
+	&:active,
+	&:hover {
+		color: #fff;
 	}
 }

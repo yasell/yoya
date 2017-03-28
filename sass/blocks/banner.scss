@@ -18,9 +18,9 @@
 
 .banner__descr {
 	width: 70%;
-	padding: 5rem 0 0 0;
+	padding: 3rem 0 0 0;
 
-	span {
+	> span {
 		display: block;
 		font-weight: normal;
 		font-size: 7rem;
@@ -32,11 +32,19 @@
 	font-weight: normal;
 	font-size: 46px;
   color: $gray_light;
+
+	> span {
+		text-decoration: line-through;
+	}
 }
 
 .banner__button {
 	margin-top: 4rem;
 
+	.button {
+		width: 20rem;
+		padding: 1rem 2rem;
+	}
 	.button:first-child {
 		margin-right: 6rem;
 	}

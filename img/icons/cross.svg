@@ -2,8 +2,13 @@
 <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
-<path fill="#324d6b" d="M40,20c0,11-9,20-20,20S0,31,0,20S9,0,20,0S40,9,40,20L40,20z M40,20"/>
-<path fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-miterlimit="10" d="M12.8,27.2l14.4-14.4
-	 M12.8,12.8l14.4,14.4"/>
+	 viewBox="0 0 68.3 68.3" enable-background="new 0 0 68.3 68.3" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="34.125" y1="68.25" x2="34.125" y2="-1.818989e-012">
+	<stop  offset="0" style="stop-color:#94B11F"/>
+	<stop  offset="1" style="stop-color:#C4DB00"/>
+</linearGradient>
+<path fill="url(#SVGID_1_)" d="M68.2,34.1C68.2,53,53,68.3,34.1,68.3S0,53,0,34.1S15.3,0,34.1,0S68.2,15.3,68.2,34.1L68.2,34.1z
+	 M68.2,34.1"/>
+<path fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-miterlimit="10" d="M21.8,46.4l24.6-24.6
+	 M21.8,21.8l24.6,24.6"/>
 </svg>
