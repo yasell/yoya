@@ -25,10 +25,14 @@
 
 .sizes__img-wrapper {
 	margin-bottom: 2rem;
+	background-color: #fff;
 	border: 3px solid $gray_lightest;
+
+	@include clearfix;
 }
 
 .sizes__footer {
+	display: none;
 	margin-bottom: 3rem;
 	text-align: center;
 }

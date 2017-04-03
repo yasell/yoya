@@ -3,7 +3,7 @@
 
 	.container {
 		display: flex;
-		padding: 3rem 1rem;
+		padding: 0 1rem;
 	}
 }
 
@@ -16,6 +16,9 @@
 	}
 	span {
 		font-weight: bold;
+	}
+	&:first-child {
+		padding-top: 10px;
 	}
 }
 

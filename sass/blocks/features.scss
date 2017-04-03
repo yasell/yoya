@@ -15,20 +15,22 @@
 	&:not(:last-child) {
 		margin-bottom: 3rem;
 	}
-	&:last-child {
-		img {
-			display: block;
-			max-width: 50%;
-			margin: 0 auto;
-		}
-	}
+	// &:last-child {
+	// 	img {
+	// 		display: block;
+	// 		max-width: 50%;
+	// 		margin: 0 auto;
+	// 	}
+	// }
 }
 
 .features__img {
 	position: relative;
-	width: 35%;
+	width: 32%;
 	margin-right: 3%;
 	overflow: hidden;
+	background-color: #fff;
+	border: 3px solid $gray_lightest;
 
 	img {
 		max-width: 100%;

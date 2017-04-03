@@ -85,6 +85,14 @@
 	overflow: auto;
 }
 
+#modal_buy {
+	padding-top: 6rem;
+
+	.modal__close {
+		top: 22px;
+	}
+}
+
 /* Animation */
 @-webkit-keyframes bounce {
 	0% {

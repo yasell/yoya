@@ -1,24 +1,29 @@
 .footer {
 	.container {
 		display: flex;
-		justify-content: center;
-		padding: 3rem 1rem;
+		justify-content: space-between;
+		padding: 1rem;
 	}
 }
 
 .footer__item {
-	width: 46rem;
+	width: 50%;
 
-	&:first-child {
-		margin-right: 13rem;
-	}
 	p {
 		margin-bottom: 1rem;
 	}
+	&:last-child {
+		padding-top: 10px;
+		text-align: right;
+	}
+}
+
+.footer__official {
+	font-size: 14px;
 }
 
 .footer__link {
-	display: block;
+	display: inline-block;
 	margin-bottom: 1rem;
 	color: $gray;
 
@@ -27,29 +32,29 @@
 		font-size: 2.5rem;
 	}
 	// viber/whatsapp
-	&--vendors {
-		position: relative;
-		padding-left: 8rem;
-
-		&:before,
-		&:after {
-			content: "";
-			position: absolute;
-			top: -5px;
-			width: 3rem;
-			height: 3rem;
-			background: center no-repeat;
-			background-size: contain;
-		}
-		&:before {
-			left: 0;
-			background-image: url("../img/icons/viber.svg");
-		}
-		&:after {
-			left: 4rem;
-			background-image: url("../img/icons/whatsapp.svg");
-		}
-	}
+	// &--vendors {
+	// 	position: relative;
+	// 	padding-left: 8rem;
+	//
+	// 	&:before,
+	// 	&:after {
+	// 		content: "";
+	// 		position: absolute;
+	// 		top: -5px;
+	// 		width: 3rem;
+	// 		height: 3rem;
+	// 		background: center no-repeat;
+	// 		background-size: contain;
+	// 	}
+	// 	&:before {
+	// 		left: 0;
+	// 		background-image: url("../img/icons/viber.svg");
+	// 	}
+	// 	&:after {
+	// 		left: 4rem;
+	// 		background-image: url("../img/icons/whatsapp.svg");
+	// 	}
+	// }
 	// instagramm
 	&--insta {
 		position: relative;

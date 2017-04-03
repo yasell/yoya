@@ -1,10 +1,10 @@
 .swiper-container {
-	padding-top: 2rem;
-	padding-bottom: 6.5rem;
+	padding: 2rem 4rem 5rem 4rem;
 }
 
 .swiper-slide {
 	text-align: center;
+	background-color: #fff;
 	border: 3px solid $gray_lightest;
 
 	.button {
@@ -25,6 +25,7 @@
 }
 
 .swiper-name {
+	min-height: 6.5rem;
 	padding: 1rem;
 }
 
@@ -35,23 +36,23 @@
 	color: $red;
 }
 
-.catalog .swiper-button-next,
-.catalog .swiper-button-prev,
-.reviews .swiper-button-next,
-.reviews .swiper-button-prev {
-	top: auto;
-	bottom: 0;
-}
+// .catalog .swiper-button-next,
+// .catalog .swiper-button-prev,
+// .reviews .swiper-button-next,
+// .reviews .swiper-button-prev {
+// 	top: auto;
+// 	bottom: 0;
+// }
 
 .catalog .swiper-button-prev,
 .reviews .swiper-button-prev {
-	left: 30%;
+	left: 0;
 	background: url("../img/icons/prev.svg") center no-repeat;
 }
 
 .catalog .swiper-button-next,
 .reviews .swiper-button-next {
-	right: 30%;
+	right: 0;
 	background: url("../img/icons/next.svg") center no-repeat;
 }
 
@@ -67,12 +68,12 @@
 }
 
 // yoya babe
-.catalog__unit .swiper-babe > .swiper-pagination-bullets {
-	bottom: -5px;
-	right: 0;
-	margin: auto;
-	max-width: 35%;
-}
+// .catalog__unit .swiper-babe > .swiper-pagination-bullets {
+// 	bottom: -5px;
+// 	right: 0;
+// 	margin: auto;
+// 	max-width: 35%;
+// }
 
 // reviews
 .reviews .swiper-container {
