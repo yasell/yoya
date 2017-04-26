@@ -9,6 +9,7 @@
 }
 
 .banner__img {
+	position: relative;
 	width: 30%;
 
 	img {
@@ -17,8 +18,20 @@
 }
 
 .banner__descr {
+	position: relative;
 	width: 70%;
 	padding: 3rem 0 0 0;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 140px;
+		right: 150px;
+		width: 120px;
+		height: 120px;
+		background: url("../img/print-big.svg") center no-repeat;
+		background-size: contain;
+	}
 
 	> span {
 		display: block;

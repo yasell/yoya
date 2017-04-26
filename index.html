@@ -14,7 +14,7 @@
 	<title> Детские коляски YOYA (ЕЯ) в Минске. Купить легкую прогулочную коляску YOYA. </title>
 	<link href="css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css" rel="stylesheet">
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css" rel="stylesheet"> -->
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,8 +56,83 @@
 							<a class="button" href="#catalog"> Купить </a>
 							<a class="button" href="#down"> Подробнее </a>
 						</div>
+						<p class="banner__title"> *бесплатная доставка по Минску и Беларуси </p>
 					</div>
 				</div>
+			</div>
+
+			<div class="sizes">
+				<h2 class="title"> Габариты коляски YOYA</h2>
+				<ul class="sizes__list  container">
+					<li class="sizes__item">
+						<img src="img/gabarite-1.jpg" style="height:auto;" alt="Габариты детской коляски" title="Габариты детской коляски">
+					</li>
+					<li class="sizes__item">
+						<img src="img/gabarite-2.jpg" style="height:auto;"  alt="Габариты, размеры детской коляски" title="Габариты, размеры детской коляски">
+					</li>
+					<li class="sizes__item">
+						<img src="img/gabarite-3.jpg" style="height:auto;"  alt="Габариты детской коляски" title="Габариты детской коляски">
+					</li>
+					<li class="sizes__item">
+						<div class="sizes__img-wrapper">
+							<img src="img/size-1.jpg" alt="Коляска YOYA в чемодане" title="Коляска YOYA в чемодане" style="float:left;">
+						</div>
+						<p> Первая складная прогулочная коляска, которая помещается в Ваш чемодан </p>
+					</li>
+					<li class="sizes__item">
+						<div class="sizes__img-wrapper">
+							<img src="img/size-2.jpg" alt="Компактная прогулочная коляска для путешествий" title="Компактная прогулочная коляска для путешествий">
+						</div>
+						<p> Сложите коляску YOYA и Вы сможете пронести ее в салон самолета </p>
+					</li>
+					<li class="sizes__item">
+						<div class="sizes__img-wrapper">
+							<img src="img/size-3.jpg" alt="Вес коляски всего 5.8 кг" title="Вес коляски всего 5.8 кг">
+						</div>
+						<p> Вес коляски всего 5.8 кг </p>
+					</li>
+				</ul>
+				<h2 class="title"> Волшебство за 1 секунду </h2>
+				<div class="container">
+					<h3 class="sub-title  sub-title--center" style="margin-top: 20px;"> Раскладывается </h3>
+					<div class="features__img-center">
+						<img src="img/decompose.png" alt="Как разложить коляску YOYA" title="Как разложить коляску YOYA">
+					</div>
+					<h3 class="sub-title  sub-title--center"> Складывается </h3>
+					<div class="features__img-center" id="down">
+						<img src="img/compose.png" alt="Как сложить коляску YOYA" title="Как сложить коляску YOYA">
+					</div>
+				</div>
+			</div>
+
+			<div class="care">
+				<h2 class="title"> Выберите свою коляску </h2>
+				<div class="container">
+					<!-- <h3 class="sub-title"><span>Yoya</span> заботится о формировании здорового позвоночника у Вашего малыша </h3> -->
+					<!-- <p> Благодаря спинке из высокопрочных пластмасс, угол наклона сидения находится в диапазоне от 95 до 165 градусов (175 градусов в модели YOYA+) <br> Такое положение не искривляет позвоночник Вашего ребенка </p> -->
+					<h3 class="sub-title"> Выберите модель коляски </h3>
+					<img src="img/model.png" alt="Детская коляска YOYA - здоровая спина ребенка" title="Детская коляска YOYA - здоровая спина ребенка">
+					<h3 class="sub-title"> Выберите цвет рамы </h3>
+					<img src="img/color.png" alt="Детская коляска YOYA - здоровая спина ребенка" title="Детская коляска YOYA - здоровая спина ребенка">
+				</div>
+			</div>
+
+			<div class="call  container">
+				<h2 class="sub-title  sub-title--center"> Заказать звонок </h2>
+				<form id="call_form2" class="form" method="post" action="#">
+					<div class="form__unit">
+						<input type="text" id="call_name2" name="name" value="" required placeholder=" " />
+						<label for="call_name2">Ваше имя*</label>
+					</div>
+					<div class="form__unit">
+						<input type="tel" id="call_phone2" name="phone" value="" required placeholder=" " pattern="^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,15}$" />
+						<label for="call_phone2">Телефон*</label>
+						<div class="form__error">
+							Введите, пожалуйста, реальный телефон.
+						</div>
+					</div>
+					<input class="form__submit  button" type="submit" value="Заказать звонок" />
+				</form>
 			</div>
 
 			<div class="features">
@@ -100,132 +175,6 @@
 						</div>
 					</li> -->
 				</ul>
-
-				<h2 class="title"> Волшебство за 1 секунду </h2>
-				<div class="container">
-					<h3 class="sub-title  sub-title--center"> Раскладывается </h3>
-					<div class="features__img-center">
-						<img src="img/decompose.png" alt="Как разложить коляску YOYA" title="Как разложить коляску YOYA">
-					</div>
-					<h3 class="sub-title  sub-title--center"> Складывается </h3>
-					<div class="features__img-center" id="down">
-						<img src="img/compose.png" alt="Как сложить коляску YOYA" title="Как сложить коляску YOYA">
-					</div>
-				</div>
-			</div>
-
-			<div class="sizes">
-				<h2 class="title"> Габариты коляски YOYA</h2>
-				<ul class="sizes__list  container">
-					<li class="sizes__item">
-						<img src="img/gabarite-1.jpg" style="height:auto;" alt="Габариты детской коляски" title="Габариты детской коляски">
-					</li>
-					<li class="sizes__item">
-						<img src="img/gabarite-2.jpg" style="height:auto;"  alt="Габариты, размеры детской коляски" title="Габариты, размеры детской коляски">
-					</li>
-					<li class="sizes__item">
-						<img src="img/gabarite-3.jpg" style="height:auto;"  alt="Габариты детской коляски" title="Габариты детской коляски">
-					</li>
-					<li class="sizes__item">
-						<div class="sizes__img-wrapper">
-							<img src="img/size-1.jpg" alt="Коляска YOYA в чемодане" title="Коляска YOYA в чемодане" style="float:left;">
-						</div>
-						<p> Первая складная прогулочная коляска, которая помещается в Ваш чемодан </p>
-					</li>
-					<li class="sizes__item">
-						<div class="sizes__img-wrapper">
-							<img src="img/size-2.jpg" alt="Компактная прогулочная коляска для путешествий" title="Компактная прогулочная коляска для путешествий">
-						</div>
-						<p> Сложите коляску YOYA и Вы сможете пронести ее в салон самолета </p>
-					</li>
-					<li class="sizes__item">
-						<div class="sizes__img-wrapper">
-							<img src="img/size-3.jpg" alt="Вес коляски всего 5.8 кг" title="Вес коляски всего 5.8 кг">
-						</div>
-						<p> Вес коляски всего 5.8 кг </p>
-					</li>
-				</ul>
-
-				<h2 class="title"> Система амортизации </h2>
-				<ul class="sizes__list  container">
-					<li class="sizes__item">
-						<div class="sizes__img-wrapper">
-							<img src="img/descr-5.jpg" alt="Система амортизации коляски YOYA" title="Система амортизации коляски YOYA">
-						</div>
-						<p> Стабильная амортизация не допускает сильную вибрацию </p>
-					</li>
-					<li class="sizes__item">
-						<div class="sizes__img-wrapper">
-							<img src="img/descr-6.jpg" alt="Комфорт для ребенка" title="Комфорт для ребенка">
-						</div>
-						<p> Голова младенца очень хрупкая и недопустимо сильное ее качание, но благодаря нашей системе амортизации малышам комфортно спать в колясках </p>
-					</li>
-					<li class="sizes__item">
-						<div class="sizes__img-wrapper">
-							<img src="img/descr-7.jpg" alt="Безопасная детская коляска" title="Безопасная детская коляска">
-						</div>
-						<p> На все детские коляски YOYA установлена система встроенной амортизации - защита от ржавчины, долгий срок службы и полная безопасность </p>
-					</li>
-				</ul>
-
-				<div class="sizes__footer  container">
-					<h3 class="sub-title  sub-title--center"> Легкость управления на любых дорожных покрытиях </h3>
-					<img src="img/road.jpg" alt="Управление коляской - легко!">
-				</div>
-			</div>
-
-			<div class="call  container">
-				<h2 class="sub-title  sub-title--center"> Заказать звонок </h2>
-				<form id="call_form1" class="form" method="post" action="#">
-					<div class="form__unit">
-						<input type="text" id="call_name1" name="name" value="" required placeholder=" " />
-						<label for="call_name1">Ваше имя*</label>
-					</div>
-					<div class="form__unit">
-						<input type="tel" id="call_phone1" name="phone" value="" required placeholder=" " pattern="^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,15}$" />
-						<label for="call_phone1">Телефон*</label>
-						<div class="form__error">
-							Введите, пожалуйста, реальный телефон.
-						</div>
-					</div>
-					<input class="form__submit  button" type="submit" value="Заказать звонок" />
-				</form>
-			</div>
-
-			<div class="care">
-				<h2 class="title"> Забота о Вашем ребенке </h2>
-				<div class="container">
-					<h3 class="sub-title"><span>Yoya</span> заботится о формировании здорового позвоночника у Вашего малыша </h3>
-					<p> Благодаря спинке из высокопрочных пластмасс, угол наклона сидения находится в диапазоне от 95 до 165 градусов (175 градусов в модели YOYA+) <br> Такое положение не искривляет позвоночник Вашего ребенка </p>
-					<img src="img/care.png" alt="Детская коляска YOYA - здоровая спина ребенка" title="Детская коляска YOYA - здоровая спина ребенка">
-				</div>
-			</div>
-
-			<div class="features">
-				<h2 class="title"> Кофморт и легкость </h2>
-				<ul class="features__list  container">
-					<li class="features__item">
-						<div class="features__img">
-							<img src="img/naklon.jpg" style="max-width:80%;" alt="Угол наклона коляски YOYA" title="Угол наклона коляски YOYA">
-						</div>
-						<div class="features__content">
-							<h3 class="sub-title"> Угол наклона спинки может регулироваться </h3>
-							<p> 95 - 165 (YOYA 175 +) градусов. Именно такое положение является наиболее комфортным для передвижения ребенка в коляске </p>
-						</div>
-					</li>
-					<li class="features__item">
-						<div class="features__img">
-							<img src="img/sun.jpg" alt="Положения козырька коляски YOYA" title="Положения козырька коляски YOYA">
-						</div>
-						<div class="features__content">
-							<h3 class="sub-title"> Несколько положений козырька </h3>
-							<p> У козырька имеется несколько вариантов положения, что защитит Вашего ребенка от вредного воздействия ультрафиолета </p>
-						</div>
-					</li>
-				</ul>
-				<!-- <div class="sizes__footer  container" style="margin-bottom:0;padding-top:0;">
-					<img src="img/sun0.jpg" alt="Возможные положения козырька коляски YOYA" title="Возможные положения козырька коляски YOYA">
-				</div> -->
 			</div>
 
 			<div class="equipment">
@@ -306,22 +255,78 @@
 				</ul>
 			</div>
 
+			<div class="sizes">
+				<h2 class="title"> Система амортизации </h2>
+				<ul class="sizes__list  container">
+					<li class="sizes__item">
+						<div class="sizes__img-wrapper">
+							<img src="img/descr-5.jpg" alt="Система амортизации коляски YOYA" title="Система амортизации коляски YOYA">
+						</div>
+						<p> Стабильная амортизация не допускает сильную вибрацию </p>
+					</li>
+					<li class="sizes__item">
+						<div class="sizes__img-wrapper">
+							<img src="img/descr-6.jpg" alt="Комфорт для ребенка" title="Комфорт для ребенка">
+						</div>
+						<p> Голова младенца очень хрупкая и недопустимо сильное ее качание, но благодаря нашей системе амортизации малышам комфортно спать в колясках </p>
+					</li>
+					<li class="sizes__item">
+						<div class="sizes__img-wrapper">
+							<img src="img/descr-7.jpg" alt="Безопасная детская коляска" title="Безопасная детская коляска">
+						</div>
+						<p> На все детские коляски YOYA установлена система встроенной амортизации - защита от ржавчины, долгий срок службы и полная безопасность </p>
+					</li>
+				</ul>
+
+				<div class="sizes__footer  container">
+					<h3 class="sub-title  sub-title--center"> Легкость управления на любых дорожных покрытиях </h3>
+					<img src="img/road.jpg" alt="Управление коляской - легко!">
+				</div>
+			</div>
+
 			<div class="call  container">
 				<h2 class="sub-title  sub-title--center"> Заказать звонок </h2>
-				<form id="call_form2" class="form" method="post" action="#">
+				<form id="call_form1" class="form" method="post" action="#">
 					<div class="form__unit">
-						<input type="text" id="call_name2" name="name" value="" required placeholder=" " />
-						<label for="call_name2">Ваше имя*</label>
+						<input type="text" id="call_name1" name="name" value="" required placeholder=" " />
+						<label for="call_name1">Ваше имя*</label>
 					</div>
 					<div class="form__unit">
-						<input type="tel" id="call_phone2" name="phone" value="" required placeholder=" " pattern="^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,15}$" />
-						<label for="call_phone2">Телефон*</label>
+						<input type="tel" id="call_phone1" name="phone" value="" required placeholder=" " pattern="^((8|\+3)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,15}$" />
+						<label for="call_phone1">Телефон*</label>
 						<div class="form__error">
 							Введите, пожалуйста, реальный телефон.
 						</div>
 					</div>
 					<input class="form__submit  button" type="submit" value="Заказать звонок" />
 				</form>
+			</div>
+
+			<div class="features">
+				<h2 class="title"> Кофморт и легкость </h2>
+				<ul class="features__list  container">
+					<li class="features__item">
+						<div class="features__img">
+							<img src="img/naklon.jpg" style="max-width:80%;" alt="Угол наклона коляски YOYA" title="Угол наклона коляски YOYA">
+						</div>
+						<div class="features__content">
+							<h3 class="sub-title"> Угол наклона спинки может регулироваться </h3>
+							<p> 95 - 165 (YOYA 175 +) градусов. Именно такое положение является наиболее комфортным для передвижения ребенка в коляске </p>
+						</div>
+					</li>
+					<li class="features__item">
+						<div class="features__img">
+							<img src="img/sun.jpg" alt="Положения козырька коляски YOYA" title="Положения козырька коляски YOYA">
+						</div>
+						<div class="features__content">
+							<h3 class="sub-title"> Несколько положений козырька </h3>
+							<p> У козырька имеется несколько вариантов положения, что защитит Вашего ребенка от вредного воздействия ультрафиолета </p>
+						</div>
+					</li>
+				</ul>
+				<!-- <div class="sizes__footer  container" style="margin-bottom:0;padding-top:0;">
+					<img src="img/sun0.jpg" alt="Возможные положения козырька коляски YOYA" title="Возможные положения козырька коляски YOYA">
+				</div> -->
 			</div>
 
 			<div id="catalog" class="catalog">
@@ -401,214 +406,214 @@
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Black">Заказать</button>
 								</div>
-								<div class="swiper-slide">
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/blue.jpg" alt="Коляска YOYA baby Blue" title="Коляска YOYA baby Blue">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Blue</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Blue">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/grey.jpg" alt="Коляска YOYA baby Grey" title="Коляска YOYA baby Grey">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Grey</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Grey">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/cat.jpg" alt="Коляска YOYA baby Cat" title="Коляска YOYA baby Cat">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Cat</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Cat">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/pinup.jpg" alt="Коляска YOYA baby Pinup" title="Коляска YOYA baby Pinup">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Pinup</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Pinup">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/bee.jpg" alt="Коляска YOYA baby Bee" title="Коляска YOYA baby Bee">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Bee</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Bee">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/blue-long.jpg" alt="Коляска YOYA baby Blue Long" title="Коляска YOYA baby Blue Long">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Blue Long</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Blue Long">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/peas-long.jpg" alt="Коляска YOYA baby Peas Long" title="Коляска YOYA baby Peas Long">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Peas Long</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Peas Long">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/dalmatian.jpg" alt="Коляска YOYA baby Dalmatian" title="Коляска YOYA baby Dalmatian">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Dalmatian</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Dalmatian">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/violet-long.jpg" alt="Коляска YOYA baby Violet Long" title="Коляска YOYA baby Violet Long">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Violet Long</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Violet Long">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/black-long.jpg" alt="Коляска YOYA baby Black Long" title="Коляска YOYA baby Black Long">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Black Long</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Black Long">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/bear.jpg" alt="Коляска YOYA baby Bear" title="Коляска YOYA baby Bear">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Bear</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Bear">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/flowers.jpg" alt="Коляска YOYA baby Flowers" title="Коляска YOYA baby Flowers">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Flowers</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Flowers">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/camouflage.jpg" alt="Коляска YOYA baby Camouflage" title="Коляска YOYA baby Camouflage">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Camouflage</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Camouflage">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/usa.jpg" alt="Коляска YOYA baby USA" title="Коляска YOYA baby USA">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA USA</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA USA">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/khaki.jpg" alt="Коляска YOYA baby Khaki" title="Коляска YOYA baby Khaki">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Khaki</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Khaki">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/rainbow.jpg" alt="Коляска YOYA baby Rainbow" title="Коляска YOYA baby Rainbow">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Rainbow</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Rainbow">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/stars.jpg" alt="Коляска YOYA baby Stars" title="Коляска YOYA baby Stars">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Stars</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Stars">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/bubble.jpg" alt="Коляска YOYA baby Bubble" title="Коляска YOYA baby Bubble">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Bubble</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Bubble">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/butterfly.jpg" alt="Коляска YOYA baby Butterfly" title="Коляска YOYA baby Butterfly">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Butterfly</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Butterfly">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/chess.jpg" alt="Коляска YOYA baby Chess" title="Коляска YOYA baby Chess">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Chess</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Chess">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/lime.jpg" alt="Коляска YOYA baby Lime" title="Коляска YOYA baby Lime">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Lime</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Lime">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/kitty.jpg" alt="Коляска YOYA baby Kitty" title="Коляска YOYA baby Kitty">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Kitty</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Kitty">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/comics.jpg" alt="Коляска YOYA baby Comics" title="Коляска YOYA baby Comics">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Comics</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Comics">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/lime-long.jpg" alt="Коляска YOYA baby Lime Long" title="Коляска YOYA baby Lime Long">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Lime Long</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Lime Long">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/red-long.jpg" alt="Коляска YOYA baby Red Long" title="Коляска YOYA baby Red Long">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Red Long</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Red Long">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-babe/yellow-long.jpg" alt="Коляска YOYA baby Yellow Long" title="Коляска YOYA baby Yellow Long">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Yellow Long</span> </p>
 									<p class="swiper-price"> 399 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Yellow Long">Заказать</button>
-								</div>
+								</div> -->
 							</div>
 							<div class="swiper-pagination"></div>
 							<div class="swiper-button-prev"></div>
@@ -628,38 +633,38 @@
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Minnie">Заказать</button>
 								</div>
-								<div class="swiper-slide">
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-mickey.jpg" alt="Коляска YOYA Plus Mickey" title="Коляска YOYA Plus Mickey">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Plus Mickey</span> </p>
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Mickey">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-light-pink.jpg" alt="Коляска YOYA Plus Light Pink" title="Коляска YOYA Plus Light Pink">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Plus Light Pink</span> </p>
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Light Pink">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-khaki.jpg" alt="Коляска YOYA Plus Khaki" title="Коляска YOYA Plus Khaki">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Plus Khaki</span> </p>
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Khaki">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-green.jpg" alt="Коляска YOYA Plus Green" title="Коляска YOYA Plus Green">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Plus Green</span> </p>
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Green">Заказать</button>
-								</div>
+								</div> -->
 								<div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-blue.jpg" alt="Коляска YOYA Plus Blue" title="Коляска YOYA Plus Blue">
@@ -668,14 +673,14 @@
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Blue">Заказать</button>
 								</div>
-								<div class="swiper-slide">
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-red.jpg" alt="Коляска YOYA Plus Red" title="Коляска YOYA Plus Red">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Plus Red</span> </p>
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Red">Заказать</button>
-								</div>
+								</div> -->
 								<div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-violet.jpg" alt="Коляска YOYA Plus Violet" title="Коляска YOYA Plus Violet">
@@ -684,38 +689,38 @@
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Violet">Заказать</button>
 								</div>
-								<div class="swiper-slide">
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-pink.jpg" alt="Коляска YOYA Plus Pink" title="Коляска YOYA Plus Pink">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Plus Pink</span> </p>
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Pink">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-light-blue.jpg" alt="Коляска YOYA Plus Light Blue" title="Коляска YOYA Plus Light Blue">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Plus Light Blue</span> </p>
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Light Blue">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-military.jpg" alt="Коляска YOYA Plus Military" title="Коляска YOYA Plus Military">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Plus Military</span> </p>
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Military">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/yoya-plus/plus-yellow.jpg" alt="Коляска YOYA Plus Yellow" title="Коляска YOYA Plus Yellow">
 									</div>
 									<p class="swiper-name"> Коляска <span>YOYA Plus Yellow</span> </p>
 									<p class="swiper-price"> 449 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Plus Yellow">Заказать</button>
-								</div>
+								</div> -->
 							</div>
 							<div class="swiper-pagination"></div>
 							<div class="swiper-button-prev"></div>
@@ -728,14 +733,14 @@
 						</p>
 						<div class="swiper-container  swiper-other">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide">
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/accessuare/box-grey.jpg" alt="Люлька YOYA Newborn Box Grey" title="Люлька YOYA Newborn Box Grey">
 									</div>
 									<p class="swiper-name"> Люлька <span>YOYA Newborn Box Grey</span> </p>
 									<p class="swiper-price"> 149 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Newborn Box Grey">Заказать</button>
-								</div>
+								</div> -->
 								<div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/accessuare/box-violet.jpg" alt="Люлька YOYA Newborn Box Violet" title="Люлька YOYA Newborn Box Violet">
@@ -800,14 +805,14 @@
 									<p class="swiper-price"> 209 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Seat Blue">Заказать</button>
 								</div>
-								<div class="swiper-slide">
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/accessuare/umbrella-green.jpg" alt="Зонт YOYA Umbrella Green" title="Зонт YOYA Umbrella Green">
 									</div>
 									<p class="swiper-name"> Зонт <span>YOYA Umbrella Green</span> </p>
 									<p class="swiper-price"> 34,90 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Umbrella Green">Заказать</button>
-								</div>
+								</div> -->
 								<div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/accessuare/umbrella-pink.jpg" alt="Зонт YOYA Umbrella Pink" title="Зонт YOYA Umbrella Pink">
@@ -832,30 +837,30 @@
 									<p class="swiper-price"> 34,90 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Umbrella Blue">Заказать</button>
 								</div>
-								<div class="swiper-slide">
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/accessuare/cape-pink.jpg" alt="Накидка YOYA Cape Pink" title="Накидка YOYA Cape Pink">
 									</div>
 									<p class="swiper-name"> Накидка <span>YOYA Cape Pink</span> </p>
 									<p class="swiper-price"> 39,90 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Cape Pink">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/accessuare/cape-black.jpg" alt="Накидка YOYA Cape Black" title="Накидка YOYA Cape Black">
 									</div>
 									<p class="swiper-name"> Накидка <span>YOYA Cape Black</span> </p>
 									<p class="swiper-price"> 39,90 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Cape Black">Заказать</button>
-								</div>
-								<div class="swiper-slide">
+								</div> -->
+								<!-- <div class="swiper-slide">
 									<div class="swiper-image">
 										<img src="img/accessuare/cape-violet.jpg" alt="Накидка YOYA Cape Violet" title="Накидка YOYA Cape Violet">
 									</div>
 									<p class="swiper-name"> Накидка <span>YOYA Cape Violet</span> </p>
 									<p class="swiper-price"> 39,90 руб </p>
 									<button class="button  button--buy" type="button" onclick="yaCounter43811344.reachGoal('zakaz'); return true;" name="Заказать" data-model="YOYA Cape Violet">Заказать</button>
-								</div>
+								</div> -->
 							</div>
 							<div class="swiper-pagination"></div>
 							<div class="swiper-button-prev"></div>
@@ -924,13 +929,11 @@
 						</p>
 						<p>
 							<span> Пункт самовывоза: </span>
-							<br> г. Минск, ТЦ "Замок"
-							<br> проспект Победителей, 65
-						</p>
-						<p>
-							<span> Время работы: </span>
-							<br> 10:00 - 22:00 (без выходных)
-						</p>
+							<br> г. Минск, ТРЦ "Арена-Сити"
+							<br> проспект Победителей, 84
+							<br> <span> *бесплатная доставка по Минску и Беларуси </span>
+						</>
+						
 						<p>
 							<span> Время работы офиса: </span>
 							<br> 09:00 - 20:00 (будни)
@@ -939,7 +942,7 @@
 					</div>
 					<div class="contacts__map">
 						<div id="map">
-							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A48c44ccaf23219c5a25636bba1bba66aa7a379695e278e71e2c4f05f0a252388&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=false"></script>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4039cd89af94404770ab12db39fc43e092d06bef2b3db90322480d27334d2b84&amp;width=100%25&amp;height=370&amp;lang=ru_RU&amp;scroll=false"></script>
 						</div>
 					</div>
 				</div>
@@ -1043,7 +1046,7 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script> -->
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	<script src="js/main.js"></script>
 	<!-- Yandex.Metrika counter -->

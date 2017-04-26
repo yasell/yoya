@@ -48,7 +48,7 @@ $(document).ready(function() {
 			var sticky = $(".header"),
 				scroll = $(window).scrollTop();
 
-			if (scroll >= 100) sticky.addClass("header--fixed");
+			if (scroll >= 30) sticky.addClass("header--fixed");
 			else sticky.removeClass("header--fixed");
 		}),
 
@@ -96,46 +96,46 @@ $(document).ready(function() {
 
 	// Swiper slider
 	// yoya babe
-	var slider1 = new Swiper(".swiper-babe", {
-		loop: true,
-		pagination: ".swiper-pagination",
-		nextButton: ".swiper-button-next",
-		prevButton: ".swiper-button-prev",
-		paginationClickable: true,
-		slidesPerView: 4,
-		spaceBetween: 40
-	});
+	// var slider1 = new Swiper(".swiper-babe", {
+	// 	loop: true,
+	// 	pagination: ".swiper-pagination",
+	// 	nextButton: ".swiper-button-next",
+	// 	prevButton: ".swiper-button-prev",
+	// 	paginationClickable: true,
+	// 	slidesPerView: 4,
+	// 	spaceBetween: 40
+	// });
 
 	// yoya plus
-	var slider2 = new Swiper(".swiper-plus", {
-		loop: true,
-		pagination: ".swiper-pagination",
-		nextButton: ".swiper-button-next",
-		prevButton: ".swiper-button-prev",
-		paginationClickable: true,
-		slidesPerView: 4,
-		spaceBetween: 40
-	});
+	// var slider2 = new Swiper(".swiper-plus", {
+	// 	loop: true,
+	// 	pagination: ".swiper-pagination",
+	// 	nextButton: ".swiper-button-next",
+	// 	prevButton: ".swiper-button-prev",
+	// 	paginationClickable: true,
+	// 	slidesPerView: 4,
+	// 	spaceBetween: 40
+	// });
 
 	// accessuare
-	var slider3 = new Swiper(".swiper-other", {
-		loop: true,
-		pagination: ".swiper-pagination",
-		nextButton: ".swiper-button-next",
-		prevButton: ".swiper-button-prev",
-		paginationClickable: true,
-		slidesPerView: 4,
-		spaceBetween: 40
-	});
+	// var slider3 = new Swiper(".swiper-other", {
+	// 	loop: true,
+	// 	pagination: ".swiper-pagination",
+	// 	nextButton: ".swiper-button-next",
+	// 	prevButton: ".swiper-button-prev",
+	// 	paginationClickable: true,
+	// 	slidesPerView: 4,
+	// 	spaceBetween: 40
+	// });
 
 	// reviews
-	var slider4 = new Swiper(".swiper-reviews", {
-		loop: true,
-		pagination: ".swiper-pagination",
-		nextButton: ".swiper-button-next",
-		prevButton: ".swiper-button-prev",
-		paginationClickable: true,
-		slidesPerView: 2,
-		spaceBetween: 100
-	});
+	// var slider4 = new Swiper(".swiper-reviews", {
+	// 	loop: true,
+	// 	pagination: ".swiper-pagination",
+	// 	nextButton: ".swiper-button-next",
+	// 	prevButton: ".swiper-button-prev",
+	// 	paginationClickable: true,
+	// 	slidesPerView: 2,
+	// 	spaceBetween: 100
+	// });
 });

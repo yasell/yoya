@@ -1,3 +1,5 @@
 ### landing page
 
-Ease terribal landing 'yoya-babe.by' ...
+ease terribal landing 'yoya-babe.by' ...
+
+мрак на [yoya-baby.by](http://yoya-baby.by/)
