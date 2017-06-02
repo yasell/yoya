@@ -303,7 +303,8 @@ a.button:active, a.button:hover {
     text-decoration: line-through; }
 
 .banner__button {
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  margin-bottom: 2rem; }
   .banner__button .button {
     width: 20rem;
     padding: 1rem 2rem; }
@@ -661,6 +662,18 @@ a.button:active, a.button:hover {
       width: 3rem;
       height: 3rem;
       background-color: #c6c6c6; }
+  .footer__link--vk {
+    position: relative;
+    padding-left: 3.5rem; }
+    .footer__link--vk:before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 3rem;
+      height: 3rem;
+      background: url("../img/vk-logo.svg") center no-repeat;
+      background-size: contain; }
 
 input[type="text"],
 input[type="email"],

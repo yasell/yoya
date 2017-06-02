@@ -70,4 +70,20 @@
 			background-color: $gray_lightest;
 		}
 	}
+	// vk
+	&--vk {
+		position: relative;
+		padding-left: 3.5rem;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: -5px;
+			left: 0;
+			width: 3rem;
+			height: 3rem;
+			background: url("../img/vk-logo.svg") center no-repeat;
+			background-size: contain;
+		}
+	}
 }
